@@ -1,4 +1,3 @@
-import java.lang.reflect.Array;
 import java.util.Arrays;
 import java.util.Comparator;
 
@@ -12,7 +11,7 @@ public class MaximumProductOfWordLengths {
                     break;
                 System.out.println(words[i] + " " + words[j]);
                 boolean distinct = true;
-                for (char c: words[j].toCharArray()) {
+                for (char c : words[j].toCharArray()) {
                     if (words[i].contains(String.valueOf(c))) {
                         distinct = false;
                         break;

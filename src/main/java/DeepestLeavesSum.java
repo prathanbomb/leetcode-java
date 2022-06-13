@@ -1,18 +1,5 @@
 public class DeepestLeavesSum {
 
-    public static class TreeNode {
-        int val;
-        TreeNode left;
-        TreeNode right;
-        TreeNode() {}
-        TreeNode(int val) { this.val = val; }
-        TreeNode(int val, TreeNode left, TreeNode right) {
-            this.val = val;
-            this.left = left;
-            this.right = right;
-        }
-    }
-
     public static int deepestLeavesSum(TreeNode root) {
         return sum(root, 0, 1, findMaxDept(root, 1));
     }
@@ -39,6 +26,25 @@ public class DeepestLeavesSum {
         if (node.right != null)
             right = sum(node.right, curSum, dept + 1, maxDept);
         return left + right;
+    }
+
+    public static class TreeNode {
+        int val;
+        TreeNode left;
+        TreeNode right;
+
+        TreeNode() {
+        }
+
+        TreeNode(int val) {
+            this.val = val;
+        }
+
+        TreeNode(int val, TreeNode left, TreeNode right) {
+            this.val = val;
+            this.left = left;
+            this.right = right;
+        }
     }
 
 }

@@ -5,7 +5,7 @@ public class MinimumNumberOfOperationsToMoveAllBallsToEachBox {
             for (int j = 0; j < boxes.length(); j++) {
                 if (i != j) {
                     if (boxes.charAt(j) == '1')
-                        ans[i] += Math.abs(j-i);
+                        ans[i] += Math.abs(j - i);
                 }
             }
         }

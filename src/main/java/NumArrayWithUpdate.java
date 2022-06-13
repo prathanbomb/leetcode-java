@@ -1,7 +1,6 @@
-import java.util.Arrays;
-
 public class NumArrayWithUpdate {
     static int[] matrix;
+
     public NumArrayWithUpdate(int[] nums) {
         matrix = nums;
     }

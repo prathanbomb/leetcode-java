@@ -11,6 +11,7 @@ public class NumArrayWithUpdateTest {
         NumArrayWithUpdate.update(1, 2);
         assertEquals(8, NumArrayWithUpdate.sumRange(0, 2));
     }
+
     @Test
     void testcase2() {
         int[] array = {5, 18, 13};

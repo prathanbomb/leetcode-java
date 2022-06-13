@@ -2,12 +2,12 @@ public class RemoveDuplicatesFromSortedArray {
     public static int removeDuplicates(int[] nums) {
         int n = nums.length;
         int count = 0;
-        for (int i = 1; i < n; i++){
-            if (nums[i] == nums[i-1])
+        for (int i = 1; i < n; i++) {
+            if (nums[i] == nums[i - 1])
                 count++;
             else
-                nums[i-count] = nums[i];
+                nums[i - count] = nums[i];
         }
-        return n-count;
+        return n - count;
     }
 }

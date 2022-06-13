@@ -1,11 +1,9 @@
-import jdk.jfr.Unsigned;
-
 import java.util.Stack;
 
 public class PathWithMinimumEffort {
 
     public static void main(String[] args) {
-        int[][] grid = {{1,2,2},{3,8,2},{5,3,5}};
+        int[][] grid = {{1, 2, 2}, {3, 8, 2}, {5, 3, 5}};
         System.out.println(minimumEffortPath(grid));
     }
 
@@ -20,15 +18,6 @@ public class PathWithMinimumEffort {
             }
         }
         return hi;
-    }
-
-    static class Node {
-        int row, col;
-
-        public Node(int row, int col) {
-            this.row = row;
-            this.col = col;
-        }
     }
 
     public static boolean dfs(int[][] grid, int target) {
@@ -67,6 +56,15 @@ public class PathWithMinimumEffort {
         }
 
         return false;
+    }
+
+    static class Node {
+        int row, col;
+
+        public Node(int row, int col) {
+            this.row = row;
+            this.col = col;
+        }
     }
 
 }

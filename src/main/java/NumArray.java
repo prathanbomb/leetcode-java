@@ -1,5 +1,6 @@
 class NumArray {
     static int[] sum;
+
     public NumArray(int[] nums) {
         sum = new int[nums.length];
         for (int i = 0; i < nums.length; i++) {
@@ -9,7 +10,7 @@ class NumArray {
                 sum[i] = sum[i - 1] + nums[i];
         }
     }
-    
+
     public static int sumRange(int left, int right) {
         if (left == 0)
             return sum[right];

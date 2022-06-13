@@ -19,8 +19,8 @@ public class CombinationSumIII {
             return;
         for (int i = index; i <= 9; i++) {
             comb.add(i);
-            findComb(allComb, comb, k, n, sum + i,i+1);
-            comb.remove(comb.size()-1);
+            findComb(allComb, comb, k, n, sum + i, i + 1);
+            comb.remove(comb.size() - 1);
         }
     }
 

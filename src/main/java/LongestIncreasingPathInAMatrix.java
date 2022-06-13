@@ -1,5 +1,5 @@
 public class LongestIncreasingPathInAMatrix {
-    static int[][] direction = {{-1,0},{0,-1},{1,0},{0,1}};
+    static int[][] direction = {{-1, 0}, {0, -1}, {1, 0}, {0, 1}};
 
     public static int longestIncreasingPath(int[][] matrix) {
         int[][] visited = new int[matrix.length][matrix[0].length];

@@ -1,5 +1,4 @@
 import java.util.HashMap;
-import java.util.concurrent.atomic.AtomicInteger;
 
 public class NumberOfGoodPairs {
     public static int numIdenticalPairs(int[] nums) {

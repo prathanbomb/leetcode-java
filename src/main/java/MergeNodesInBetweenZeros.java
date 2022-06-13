@@ -1,12 +1,4 @@
 public class MergeNodesInBetweenZeros {
-    public static class ListNode {
-        int val;
-        ListNode next;
-        ListNode() {}
-        ListNode(int val) { this.val = val; }
-        ListNode(int val, ListNode next) { this.val = val; this.next = next; }
-    }
-
     public static ListNode mergeNodes(ListNode head) {
         ListNode temp = new ListNode();
         ListNode ans = temp;
@@ -30,6 +22,23 @@ public class MergeNodesInBetweenZeros {
             System.out.print(head.val + "->");
             head = head.next;
         }
-        System.out.println("");
+        System.out.println();
+    }
+
+    public static class ListNode {
+        int val;
+        ListNode next;
+
+        ListNode() {
+        }
+
+        ListNode(int val) {
+            this.val = val;
+        }
+
+        ListNode(int val, ListNode next) {
+            this.val = val;
+            this.next = next;
+        }
     }
 }

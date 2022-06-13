@@ -23,7 +23,7 @@ public class DivideTwoIntegers {
             return 0;
         dividend = Math.abs(dividend);
         divisor = Math.abs(divisor);
-        if (divisor == 1){
+        if (divisor == 1) {
             counter += dividend;
             return negative ? -counter : counter;
         }
